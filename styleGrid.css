@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 70vw;
+    margin: 0 auto;
+    background-color: red;
+}
+
+
+.crop {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 20% 10%;
+}
+
+
+/* TOP GALLERY */
+
+.dishes {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: black;
+}
+
+.left {
+    width: 100%;
+    text-align: left;
+}
+
+.left img {
+    margin-right: 5%;
+    border-radius: 10px;
+    width: 95%;
+    height: 100%;
+}
+
+.right {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    background-color: pink;
+    width: 100%;
+}
+
+.right img {
+    padding-right: 10px;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.right .dish:nth-child(n+3) img {
+    padding-top: 20px;
+}
+
+
+.dish {
+    position: relative;
+}
+
+p {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 30px
+}
+
+
+
+
+/* HEARTS */
+.fa-heart {
+    right: 10px;
+    top: 10px;
+    color: green;
+    cursor: pointer;
+    filter: drop-shadow(0px 3px 2px rgb(0 0 0 / 0.4));
+}
+
+.fa-heart::after {
+    content: '';
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
