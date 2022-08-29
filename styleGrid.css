@@ -70,12 +70,12 @@ p {
 }
 
 
+
 /* BOTTOM MENU */
 
 .menus {
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    /* grid-template-rows: 20% 20% 20% 20% 20%; */
 }
 
 .menu {
@@ -98,6 +98,26 @@ p {
     margin: 10px 0 0 10px;
     width: 80%;
     height: auto;
+}
+
+/* MEDIA QUERY */
+
+@media(orientation: portrait) {
+
+    .dishes {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .right .dish img {
+        padding-top: 20px;
+    }
+
+    .menus {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 }
 
 /* HEARTS */
